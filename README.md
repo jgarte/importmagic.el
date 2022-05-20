@@ -86,6 +86,25 @@ put this line anywhere in your `.emacs` or `init.el`
 (add-hook 'python-mode-hook 'importmagic-mode)
 ```
 
+#### With GNU Guix
+
+```shell
+guix install emacs-importmagic
+```
+
+If you'd like to create a development environment with all the required 
+dependencies (including python dependencies) run the following:
+
+```shell
+guix shell --development emacs-importmagic
+```
+
+If you prefer a shorter command flag, then try:
+
+```shell
+guix shell -D emacs-importmagic
+```
+
 ## Usage
 
 The default behavior sets only one key binding: <kbd>C-c C-l</kbd>. It
